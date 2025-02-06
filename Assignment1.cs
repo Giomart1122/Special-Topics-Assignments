@@ -73,8 +73,9 @@ class Program
         Console.WriteLine($"Product: ({tuple1.Item1 * tuple2.Item1}, {tuple1.Item2 * tuple2.Item2})");
         
         // Cat Breeds Array
-        string[] catBreeds = { "Persian", "Maine Coon", "Siamese", "Bengal", "Sphynx", "British Shorthair", "Abyssinian", "Scottish Fold", "Ragdoll" };
-        Console.WriteLine(string.Join(", ", catBreeds));
+        string[] catBreeds = { "Siamese", "British Shorthair", "Maine Coon", "Persian", "Ragdoll", "Sphynx", "Abyssinian", "American Shorthair", "Burmese" };
+        Console.WriteLine($"My cats: {string.Join(", ", catBreeds)}");
+        Console.WriteLine($"The 3rd through 5th cats: ");
         Console.WriteLine(string.Join(", ", catBreeds[2..5]));
     }
 }
