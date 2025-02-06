@@ -6,9 +6,9 @@ internal class Program{
         string lastName = Console.ReadLine()?.Trim() ?? "Greenberg";
         string birthPlace = Console.ReadLine()?.Trim() ?? "Belize";
         
-        Console.WriteLine($"Hi, my name is {firstName} {lastName}, and I was born in {birthPlace}.");
-        Console.WriteLine($"It is polite to write my name like this: {firstName.ToUpper()} {lastName.ToUpper()}.");
-        Console.WriteLine($"My name is huge; it is {(firstName.Length + lastName.Length)} characters long!");
+        Console.Write($"Hi, my name is {firstName} {lastName}, and I was born in {birthPlace}.");
+        Console.Write($" It is polite to write my name like this: {firstName.ToUpper()} {lastName.ToUpper()}.");
+        Console.WriteLine($" My name is huge; it is {(firstName.Length + lastName.Length)} characters long!");
         Console.WriteLine();
         
         string country = Console.ReadLine()?.Trim() ?? "Georgia";
@@ -17,7 +17,7 @@ internal class Program{
         
         string capitalShort = capital.StartsWith("Para") ? capital[4..] : capital;
         Console.WriteLine($"Many of my friends were born in the country of {country}. Its capital is {capital}, but people call it: {capitalShort}.");
-        
+        Console.WriteLine();
         //Country Talk
         Console.Write($"My country is very wealthy, with a GDP of {gdp:C}.");
         Console.Write($"We have 100000 citizens, and each generates {gdp / 100000:C} of the GDP output.");
@@ -33,6 +33,8 @@ internal class Program{
         int q3 = int.Parse(Console.ReadLine());
         int q4 = int.Parse(Console.ReadLine());
         long totalWidgets = (long)q1 + q2 + q3 + q4;
+        Console.WriteLine("Here is my friend, her age, and how many widgets she produced per quarter last year:");
+        Console.WriteLine();
         Console.WriteLine($"Name: {friendName} Age: {friendAge} Q1: {q1} Q2: {q2} Q3: {q3} Q4: {q4} Total: {totalWidgets}");
         Console.WriteLine();
         
