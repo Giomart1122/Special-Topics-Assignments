@@ -1,0 +1,15 @@
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\Assignment1Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\Assignment1Project.AssemblyInfoInputs.cache
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\Assignment1Project.AssemblyInfo.cs
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\Assignment1Project.csproj.CoreCompileInputs.cache
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\Assignment1Project.sourcelink.json
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\bin\Debug\net9.0\Assignment1Project.exe
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\bin\Debug\net9.0\Assignment1Project.deps.json
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\bin\Debug\net9.0\Assignment1Project.runtimeconfig.json
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\bin\Debug\net9.0\Assignment1Project.dll
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\bin\Debug\net9.0\Assignment1Project.pdb
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\Assignment1Project.dll
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\refint\Assignment1Project.dll
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\Assignment1Project.pdb
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\Assignment1Project.genruntimeconfig.cache
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assignment1Project\obj\Debug\net9.0\ref\Assignment1Project.dll
