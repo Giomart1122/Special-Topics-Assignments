@@ -5,6 +5,7 @@ class Program {
     static void Main() {
         Stack<int> stack = new Stack<int>();
         bool processingStack = true;  // Tracks whether we are in the stack or find section
+        int[] stackArray;
 
         string? line;
         while ((line = Console.ReadLine()) != null) {
@@ -13,13 +14,13 @@ class Program {
 
             if (line == "(stack end)") {
                 processingStack = false;
-                Console.WriteLine("Stack processing finished.\n");
+                //Console.WriteLine(string.Join("  ", stackArray) + "\n");
                 continue;
             }
             if (line == "(find end)") {
-                Console.WriteLine("Find operations finished.");
-                break;
-            }
+               // Console.WriteLine("Find operations finished.");
+                continue;
+            }   
 
             if (processingStack) {
                 if (parts[0] == "push") {
@@ -41,14 +42,15 @@ class Program {
                 }
             } 
             else { // Processing find commands
-            int[] stackArray = stack.ToArray(); // Convert stack to array
+            int loop = 0;
+            stackArray = stack.ToArray(); // Convert stack to array
                 if (parts[0] == "find") {
                     if (parts.Length == 2 && int.TryParse(parts[1], out int target)) {
                         bool found = false;
                         // Stack stores elements in reverse order, so index is reversed
                         for (int i = 0; i < stackArray.Length; i++) {
                             if (stackArray[i] == target) {
-                                Console.WriteLine($"Found {target} at index {i}");
+                                Console.WriteLine($"Searching List for item {target}, found it at index {i}" + "\n");
                                 found = true;
                             }
                         }
@@ -57,10 +59,11 @@ class Program {
                             Console.WriteLine($"{target} not found");
                         }
                     } else {
-                        Console.WriteLine($"Invalid find operation: '{line}'");
+                        continue;
                     }
                 }
             }
         }
+        //Console.WriteLine("Unsorted Array: ");
     }
 }
