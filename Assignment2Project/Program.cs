@@ -47,7 +47,7 @@ class Program {
                         // Stack stores elements in reverse order, so index is reversed
                         for (int i = 0; i < stackArray.Length; i++) {
                             if (stackArray[i] == target) {
-                                Console.WriteLine($"Found {target} at index {stackArray.Length - 1 - i}");
+                                Console.WriteLine($"Found {target} at index {i}");
                                 found = true;
                             }
                         }
