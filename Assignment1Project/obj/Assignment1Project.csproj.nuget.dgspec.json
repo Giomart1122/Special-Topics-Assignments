@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\Assignment1Project.csproj": {}
+    "c:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\Assignment1Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\Assignment1Project.csproj": {
+    "c:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\Assignment1Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\Assignment1Project.csproj",
+        "projectUniqueName": "c:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\Assignment1Project.csproj",
         "projectName": "Assignment1Project",
-        "projectPath": "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\Assignment1Project.csproj",
+        "projectPath": "c:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\Assignment1Project.csproj",
         "packagesPath": "C:\\Users\\Gio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\obj\\",
+        "outputPath": "c:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment1Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gio\\AppData\\Roaming\\NuGet\\NuGet.Config"

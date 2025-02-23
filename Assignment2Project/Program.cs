@@ -38,13 +38,13 @@ class Program {
         // Display stack contents after processing
         int[] stackArray = stack.ToArray();
         Console.Write("\nStack after processing:  ");
-        Console.WriteLine(string.Join("   ", stackArray) + "\n");
+        Console.WriteLine(string.Join("  ", stackArray) + "\n");
 
         // Process find operations
         while ((line = Console.ReadLine()) != null) {
             string[] parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             if (line == "(find end)") {
-                continue; // Stop processing find commands
+                break; // Stop processing find commands
             }
 
             if (parts[0] == "find") {
@@ -64,10 +64,10 @@ class Program {
 
         // Print unsorted and sorted arrays
         Console.Write("Unsorted Array: ");
-        Console.WriteLine(string.Join("   ", stackArray) + "\n");
+        Console.WriteLine(string.Join("  ", stackArray) + "\n");
 
         Array.Sort(stackArray);
         Console.Write("Sorted Array:  ");
-        Console.WriteLine(string.Join("   ", stackArray) + "\n");
+        Console.WriteLine(string.Join("  ", stackArray) + "\n");
     }
 }
