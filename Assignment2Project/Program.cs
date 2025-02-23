@@ -25,25 +25,26 @@ class Program {
                 if (parts[0] == "push") {
                     if (parts.Length == 2 && int.TryParse(parts[1], out int num)) {
                         stack.Push(num);
-                        Console.WriteLine($"Pushed: {num}");
+                        Console.WriteLine($"Pushed: {num}" + "\n");
                     } else {
-                        Console.WriteLine($"Invalid push operation: '{line}'");
-                    }
+                       // Console.WriteLine($"Invalid push operation: '{line}'");
+                       continue;
+                    }   
                 } 
                 else if (parts[0] == "pop") {
                     if (stack.Count > 0) {
-                        Console.WriteLine($"Popped: {stack.Pop()}");
+                        Console.WriteLine($"Popped: {stack.Pop()}" + "\n");
+
                     } else {
-                        Console.WriteLine("Stack is empty! Cannot pop.");
+                        Console.WriteLine("Stack is empty! Cannot pop." + "\n");
                     }
                 }
             } 
             else { // Processing find commands
+            int[] stackArray = stack.ToArray(); // Convert stack to array
                 if (parts[0] == "find") {
                     if (parts.Length == 2 && int.TryParse(parts[1], out int target)) {
-                        int[] stackArray = stack.ToArray(); // Convert stack to array
                         bool found = false;
-
                         // Stack stores elements in reverse order, so index is reversed
                         for (int i = 0; i < stackArray.Length; i++) {
                             if (stackArray[i] == target) {
