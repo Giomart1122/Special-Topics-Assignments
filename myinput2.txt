@@ -1,0 +1,26 @@
+push 3
+push 7
+pop
+push 9
+push
+pop
+pop
+pop
+push push
+push 17
+push 8
+push 9
+push 11
+push 43
+push 3
+push 88
+pop
+push 12
+pop
+pop
+(stack end)
+find 9
+find 11
+find find
+find 17
+(find end)
