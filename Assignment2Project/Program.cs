@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 class Program {
     static void Main() {
         Stack<int> stack = new Stack<int>();
+        List<int> poppedElements = new List<int>(); // Stores popped elements
         bool processingStack = true;  // Tracks whether we are in the stack or find section
 
         string? line;
@@ -14,60 +14,59 @@ class Program {
 
             if (line == "(stack end)") {
                 processingStack = false;
-                continue; // Stop processing stack commands
+                continue;
             }
+            if (line == "(find end)") {
+                continue;
+            }   
 
-            if (parts[0] == "push") {
-                if (parts.Length == 2 && int.TryParse(parts[1], out int num)) {
-                    stack.Push(num);
-                    Console.WriteLine($"Pushed {num}\n");
-                } else {
-                   // Console.WriteLine($"Invalid push operation: '{line}'\n");
-                   continue;
+            if (processingStack) {
+                if (parts[0] == "push") {
+                    if (parts.Length == 2 && int.TryParse(parts[1], out int num)) {
+                        stack.Push(num);
+                        Console.WriteLine($"Pushed: {num}" + "\n");
+                    } else {
+                        continue;
+                    }   
+                } 
+                else if (parts[0] == "pop") {
+                    if (stack.Count > 0) {
+                        int poppedValue = stack.Pop();
+                        poppedElements.Add(poppedValue); // Store in the list
+                        Console.WriteLine($"Popped: {poppedValue}" + "\n");
+                    } else {
+                        Console.WriteLine("Stack is empty! Cannot pop."+"\n");
+                    }
                 }
             } 
-            else if (parts[0] == "pop") {
-                if (stack.Count > 0) {
-                    Console.WriteLine($"Popped {stack.Pop()}\n");
-                } else {
-                    Console.WriteLine("Stack is empty! Cannot pop.\n");
-                }
-            }
-        }
-
-        // Display stack contents after processing
-        int[] stackArray = stack.ToArray();
-        Console.Write("\nStack after processing:  ");
-        Console.WriteLine(string.Join("  ", stackArray) + "\n");
-
-        // Process find operations
-        while ((line = Console.ReadLine()) != null) {
-            string[] parts = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            if (line == "(find end)") {
-                break; // Stop processing find commands
-            }
-
-            if (parts[0] == "find") {
-                if (parts.Length == 2 && int.TryParse(parts[1], out int target)) {
-                    Console.Write($"Searching list for item {target}, ");
-                    int index = Array.IndexOf(stackArray, target);
-                    if (index != -1) {
-                        Console.WriteLine($"found it in array position {index}.\n");
+            else { // Processing find commands
+                int[] stackArray = stack.ToArray(); // Convert stack to array
+                if (parts[0] == "find") {
+                    if (parts.Length == 2 && int.TryParse(parts[1], out int target)) {
+                        bool found = false;
+                        for (int i = 0; i < stackArray.Length; i++) {
+                            if (stackArray[i] == target) {
+                                Console.WriteLine($"Searching List for item {target}, found it at index {i}" + "\n");
+                                found = true;
+                            }
+                        }
+                        if (!found) {
+                            Console.WriteLine($"{target} not found");
+                        }
                     } else {
-                        Console.WriteLine("did not find it in the array.\n");
+                        continue;
                     }
-                } else {
-                    Console.WriteLine($"Invalid find operation: '{line}'\n");
                 }
             }
         }
 
-        // Print unsorted and sorted arrays
-        Console.Write("Unsorted Array: ");
-        Console.WriteLine(string.Join("  ", stackArray) + "\n");
-
-        Array.Sort(stackArray);
-        Console.Write("Sorted Array:  ");
-        Console.WriteLine(string.Join("  ", stackArray) + "\n");
+        // Convert list to array and print its contents
+        int[] poppedArray = poppedElements.ToArray();
+        Console.WriteLine("\nPopped Elements: " + string.Join(" ", poppedArray) + "\n");
+        Console.WriteLine("Stack after processing: " + string.Join(" ", stack.ToArray()) + "\n");
+        int[] stackedArray = stack.ToArray();
+        Console.WriteLine("Unsorted Array: " + string.Join(" ", stackedArray) + "\n");
+        Array.Sort(stackedArray);
+        Console.WriteLine("Sorted Array: " + string.Join(" ", stackedArray) + "\n");
     }
 }
