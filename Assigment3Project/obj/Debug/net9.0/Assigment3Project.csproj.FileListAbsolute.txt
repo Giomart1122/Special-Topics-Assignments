@@ -1,0 +1,15 @@
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\bin\Debug\net9.0\Assigment3Project.exe
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\bin\Debug\net9.0\Assigment3Project.deps.json
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\bin\Debug\net9.0\Assigment3Project.runtimeconfig.json
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\bin\Debug\net9.0\Assigment3Project.dll
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\bin\Debug\net9.0\Assigment3Project.pdb
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\Assigment3Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\Assigment3Project.AssemblyInfoInputs.cache
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\Assigment3Project.AssemblyInfo.cs
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\Assigment3Project.csproj.CoreCompileInputs.cache
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\Assigment3Project.sourcelink.json
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\Assigment3Project.dll
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\refint\Assigment3Project.dll
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\Assigment3Project.pdb
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\Assigment3Project.genruntimeconfig.cache
+C:\Users\Gio\Documents\GitHub\Special-Topics-Assignments\Assigment3Project\obj\Debug\net9.0\ref\Assigment3Project.dll
