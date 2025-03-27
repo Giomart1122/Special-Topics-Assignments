@@ -18,19 +18,22 @@ class Program
         Console.WriteLine("Built a new single family home!");
         Console.WriteLine("Built a new warehouse!");
         Console.WriteLine("Bult a new Townhome!");
-
+        Console.WriteLine();
         // Turn on AC for all buildings
+        Console.WriteLine("Trying to turn on everyone's AC:");
         foreach (var building in buildings)
         {
             building.TurnOnAC();
         }
-
+        Console.WriteLine();
         // Fire breakout simulation
+        Console.WriteLine("There was a fire: ");
         foreach (var building in buildings)
         {
             building.FireBreakout();
         }
-
+        Console.WriteLine();
+        Console.WriteLine("Printing the building status: ");
         // Print building details
         foreach (var building in buildings)
         {
@@ -63,9 +66,9 @@ abstract class Building
 
     public virtual void FireBreakout()
     {
-        Console.WriteLine($"🔥 Fire at {GetType().Name} ({Address})! No automatic sprinkler system.");
+        Console.WriteLine($"The {GetType().Name} is on fire! No automatic sprinkler system.");
     }
-
+    
     public override string ToString()
     {
         return $"{GetType().Name} - Address: {Address}, Color: {Color}, Doors: {Doors}, Toilets: {Toilets}, AC: {HasAC}";
@@ -81,7 +84,7 @@ abstract class ResidentialBuilding : Building
 
     public override void FireBreakout()
     {
-        Console.WriteLine($"🔥 Fire at {GetType().Name} ({Address})! Sprinklers activated.");
+        Console.WriteLine($"The {GetType().Name} is on fire! Sprinklers activated.");
     }
 }
 
@@ -95,7 +98,7 @@ abstract class CommercialBuilding : Building
 
     public override void FireBreakout()
     {
-        Console.WriteLine($"🔥 Fire at {GetType().Name} ({Address})! No sprinklers available. Building likely burned down.");
+        Console.WriteLine($"The {GetType().Name} is on fire! But it doesn't have sprinklers!");
     }
 }
 
