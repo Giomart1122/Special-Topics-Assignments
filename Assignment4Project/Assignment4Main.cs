@@ -61,11 +61,11 @@ abstract class Animal
 
     public override string ToString()
     {
-        return $"{Name} ({Classification}) - Food: {FavoriteFood}, Strength: {Strength}, Birth: {BirthDay}, Death: {DeathDay}";
+        return $"{Name} ({Classification}) - Food: {FavoriteFood}, Strength: {Strength}, BirthDay: {BirthDay}, DeathDate: {DeathDay}";
     }
 }
 
-// Derived Classes for Each Animal Type
+// Classes for Each Animal Type
 class Monkey : Animal
 {
     public Monkey(int birthDay) : base("Monkey", "Mammal", "Banana", 100, birthDay) { }
@@ -85,9 +85,33 @@ class Predator : Animal
 {
     public Predator(int birthDay) : base("Predator", "Extraterrestrial", "Everything", 10000, birthDay) { }
 
-    public override void Feed()
+    public void Feed(List<Animal> animals)
     {
-        Console.WriteLine($"Predator is eating EVERYTHING!");
+        Console.WriteLine($"Predator is eating {FavoriteFood}!");
+        List<Animal> eatenAnimals = new List<Animal>();
+
+        foreach (var animal in animals)
+        {
+            if (animal.IsAlive && animal.GetType() != typeof(Predator)) // Predator doesn't eat other predators
+            {
+                animal.Die(0); // Predator eats them immediately
+                eatenAnimals.Add(animal);
+            }
+        }
+
+        // Print the animals eaten
+        if (eatenAnimals.Count > 0)
+        {
+            Console.WriteLine("Predator ate:");
+            foreach (var eaten in eatenAnimals)
+            {
+                Console.WriteLine($"- {eaten.Name} ({eaten.Classification})");
+            }
+        }
+        else
+        {
+            Console.WriteLine("There were no animals left to eat!");
+        }
     }
 }
 
@@ -95,7 +119,7 @@ class Predator : Animal
 class Zoo
 {
     private List<Animal> animals = new List<Animal>();
-    private int currentDay = 0;
+    private int currentDay = 1;
 
     public void ProcessEvent(string eventLine)
     {
@@ -145,16 +169,23 @@ class Zoo
         }
     }
 
-    private void Feeding()
+  private void Feeding()
+{
+    foreach (var animal in animals)
     {
-        foreach (var animal in animals)
+        if (animal.IsAlive)
         {
-            if (animal.IsAlive)
+            if (animal is Predator predator)
+            {
+                predator.Feed(animals); // Pass the list so Predator eats all non-predators
+            }
+            else
             {
                 animal.Feed();
             }
         }
     }
+}
 
     private void Sunrise()
     {
@@ -219,7 +250,7 @@ class Zoo
 
 
 
-
+//-------------Rob's way of stream IO-------------
 
 //Read Input Data
 //FileStream stream = new FileStream("C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment4Project\\AS4 input2.txt", FileMode.Open);
