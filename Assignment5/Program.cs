@@ -63,31 +63,31 @@ class Program
             Console.WriteLine($"You answered {userAnswer} at {userTime:HH:mm:ss.fff}");
 
             // Determine result
-bool userCorrect = userAnswer == correctAnswer;
-var fastest = GetFastest(userTime, opponentResults);
-bool userFastest = fastest.Name == "You";
-TimeSpan diff = userFastest
-    ? opponentResults.Min(x => userTime - x.Time) // you are fastest, so show how much faster than the closest
-    : userTime - fastest.Time;
+            bool userCorrect = userAnswer == correctAnswer;
+            var fastest = GetFastest(userTime, opponentResults);
+            bool userFastest = fastest.Name == "You";
+            TimeSpan diff = userFastest
+                ? opponentResults.Min(x => userTime - x.Time) // you are fastest, so show how much faster than the closest
+                : userTime - fastest.Time;
 
-if (userCorrect)
-{
-    if (userFastest)
-        Console.WriteLine($"Correct! You were the fastest by {Math.Abs(diff.TotalMilliseconds)} ms."); //Incorrect
-    else
-        Console.WriteLine($"Correct! But {fastest.Name} was faster by {diff.TotalMilliseconds:F0} ms."); //Correct
-}
-else
-{
-    if (userFastest)
-        Console.WriteLine($"Incorrect, but you were quickest by {Math.Abs(diff.TotalMilliseconds)}"); //Incorrect
-    else
-        Console.WriteLine($"Incorrect and {fastest.Name} was faster by {diff.TotalMilliseconds}."); //Correct
-}
+            if (userCorrect)
+            {
+                if (userFastest)
+                    Console.WriteLine($"Correct! You were the fastest by {Math.Abs(diff.TotalMilliseconds)} ms."); //Incorrect
+                else
+                    Console.WriteLine($"Correct! But {fastest.Name} was faster by {diff.TotalMilliseconds:F0} ms."); //Correct
+            }
+            else
+            {
+                if (userFastest)
+                    Console.WriteLine($"Incorrect, but you were quickest by {Math.Abs(diff.TotalMilliseconds)}"); //Incorrect
+                else
+                    Console.WriteLine($"Incorrect and {fastest.Name} was faster by {diff.TotalMilliseconds}."); //Correct
+            }
         }
 
-        Console.WriteLine("\nPress Enter to return to menu...");
-        Console.ReadLine();
+                    Console.WriteLine("\nPress Enter to return to menu...");
+                    Console.ReadLine();
     }
 
     static void Opponent(string name, int answer, List<(string, int, DateTime)> results)
