@@ -1,0 +1,14 @@
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/bin/Debug/net9.0/Assignment5
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/bin/Debug/net9.0/Assignment5.deps.json
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/bin/Debug/net9.0/Assignment5.runtimeconfig.json
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/bin/Debug/net9.0/Assignment5.dll
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/bin/Debug/net9.0/Assignment5.pdb
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/Assignment5.GeneratedMSBuildEditorConfig.editorconfig
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/Assignment5.AssemblyInfoInputs.cache
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/Assignment5.AssemblyInfo.cs
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/Assignment5.csproj.CoreCompileInputs.cache
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/Assignment5.dll
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/refint/Assignment5.dll
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/Assignment5.pdb
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/Assignment5.genruntimeconfig.cache
+/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/Debug/net9.0/ref/Assignment5.dll
