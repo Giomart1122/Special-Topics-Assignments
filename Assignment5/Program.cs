@@ -50,7 +50,7 @@ class Program
             DateTime userTime = DateTime.Now;
             int userAnswer = int.TryParse(userInput, out int parsed) ? parsed : 0;
 
-            // Wait for bots to finish
+            // Wait for threads to finish
             t1.Join();
             t2.Join();
 
