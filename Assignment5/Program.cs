@@ -73,14 +73,14 @@ TimeSpan diff = userFastest
 if (userCorrect)
 {
     if (userFastest)
-        Console.WriteLine($"Correct! You were the fastest by {diff.TotalMilliseconds:F0} ms."); //Incorrect
+        Console.WriteLine($"Correct! You were the fastest by {Math.Abs(diff.TotalMilliseconds)} ms."); //Incorrect
     else
         Console.WriteLine($"Correct! But {fastest.Name} was faster by {diff.TotalMilliseconds:F0} ms."); //Correct
 }
 else
 {
     if (userFastest)
-        Console.WriteLine($"Incorrect, but you were quickest by {diff.TotalMilliseconds}"); //Incorrect
+        Console.WriteLine($"Incorrect, but you were quickest by {Math.Abs(diff.TotalMilliseconds)}"); //Incorrect
     else
         Console.WriteLine($"Incorrect and {fastest.Name} was faster by {diff.TotalMilliseconds}."); //Correct
 }
