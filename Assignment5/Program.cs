@@ -63,17 +63,27 @@ class Program
             Console.WriteLine($"You answered {userAnswer} at {userTime:HH:mm:ss.fff}");
 
             // Determine result
-            bool userCorrect = userAnswer == correctAnswer;
-            var fastest = GetFastest(userTime, opponentResults);
-            TimeSpan diff = (userTime - fastest.Time).Duration();
+bool userCorrect = userAnswer == correctAnswer;
+var fastest = GetFastest(userTime, opponentResults);
+bool userFastest = fastest.Name == "You";
+TimeSpan diff = userFastest
+    ? opponentResults.Min(x => userTime - x.Time) // you are fastest, so show how much faster than the closest
+    : userTime - fastest.Time;
 
-            Console.WriteLine(userCorrect
-                ? fastest.Name == "You"
-                    ? $"Correct! You were the fastest by {userTime} ms." //orignal was diff.totalMilliseconds but didnt work.
-                    : $"Correct! But {fastest.Name} was faster by {diff.TotalMilliseconds} ms."
-                : fastest.Name == "You"
-                    ? $"Incorrect. You were fast, but wrong."
-                    : $"Incorrect and {fastest.Name} was faster by {fastest.Time} ms.");
+if (userCorrect)
+{
+    if (userFastest)
+        Console.WriteLine($"Correct! You were the fastest by {diff.TotalMilliseconds:F0} ms."); //Incorrect
+    else
+        Console.WriteLine($"Correct! But {fastest.Name} was faster by {diff.TotalMilliseconds:F0} ms."); //Correct
+}
+else
+{
+    if (userFastest)
+        Console.WriteLine($"Incorrect, but you were quickest by {diff.TotalMilliseconds}"); //Incorrect
+    else
+        Console.WriteLine($"Incorrect and {fastest.Name} was faster by {diff.TotalMilliseconds}."); //Correct
+}
         }
 
         Console.WriteLine("\nPress Enter to return to menu...");

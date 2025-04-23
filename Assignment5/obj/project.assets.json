@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/Assignment5.csproj",
+      "projectUniqueName": "/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment5/Assignment5.csproj",
       "projectName": "Assignment5",
-      "projectPath": "/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/Assignment5.csproj",
+      "projectPath": "/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment5/Assignment5.csproj",
       "packagesPath": "/Users/giovannimartinez/.nuget/packages/",
-      "outputPath": "/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/",
+      "outputPath": "/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment5/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/giovannimartinez/.nuget/NuGet/NuGet.Config"
