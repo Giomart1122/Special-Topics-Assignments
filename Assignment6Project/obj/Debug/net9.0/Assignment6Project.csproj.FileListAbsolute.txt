@@ -1,0 +1,15 @@
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/bin/Debug/net9.0/Assignment6Project
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/bin/Debug/net9.0/Assignment6Project.deps.json
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/bin/Debug/net9.0/Assignment6Project.runtimeconfig.json
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/bin/Debug/net9.0/Assignment6Project.dll
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/bin/Debug/net9.0/Assignment6Project.pdb
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/Assignment6Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/Assignment6Project.AssemblyInfoInputs.cache
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/Assignment6Project.AssemblyInfo.cs
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/Assignment6Project.csproj.CoreCompileInputs.cache
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/Assignment6Project.sourcelink.json
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/Assignment6Project.dll
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/refint/Assignment6Project.dll
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/Assignment6Project.pdb
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/Assignment6Project.genruntimeconfig.cache
+/Users/giovannimartinez/Documents/GitHub/Special-Topics-Assignments/Assignment6Project/obj/Debug/net9.0/ref/Assignment6Project.dll
