@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/Assignment5.csproj": {}
+    "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment5\\Assignment5.csproj": {}
   },
   "projects": {
-    "/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/Assignment5.csproj": {
+    "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment5\\Assignment5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/Assignment5.csproj",
+        "projectUniqueName": "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment5\\Assignment5.csproj",
         "projectName": "Assignment5",
-        "projectPath": "/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/Assignment5.csproj",
-        "packagesPath": "/Users/giovannimartinez/.nuget/packages/",
-        "outputPath": "/Users/giovannimartinez/Documents/School - SHSU/Spring 2025/Special Topics/Assignments/Assignment5/obj/",
+        "projectPath": "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment5\\Assignment5.csproj",
+        "packagesPath": "C:\\Users\\Gio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gio\\Documents\\GitHub\\Special-Topics-Assignments\\Assignment5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/giovannimartinez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Gio\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
